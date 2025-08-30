@@ -36,6 +36,9 @@ Workstation-Cluster-Manager/
 
 docker compose up --build --scale client=4
 
+docker logs workstation-cluster-manager-server-1
+
 http://localhost:8000
 
 ## Stop the cluster
+

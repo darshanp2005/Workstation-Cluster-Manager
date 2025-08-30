@@ -17,7 +17,8 @@ from flask import Flask, render_template_string, request
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- Shared Configuration ---
-SHARED_DIRECTORY = "/home/parth/projects/p2pCluster"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # project root (where app.py lives)
+SHARED_DIRECTORY = os.path.join(BASE_DIR, "shared")    # points to ./shared folder
 SERVER_ADDRESS = "0.0.0.0"  # Listen on all interfaces
 SERVER_PORT = 5000
 HEALTH_REPORT_INTERVAL = 5  # seconds
