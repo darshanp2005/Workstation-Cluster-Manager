@@ -34,6 +34,8 @@ Workstation-Cluster-Manager/
 │   └── render_video.py
 └── README.md            # This file
 
+pip install -r requirements.txt
+
 docker compose up --build --scale client=4
 
 docker logs workstation-cluster-manager-server-1
